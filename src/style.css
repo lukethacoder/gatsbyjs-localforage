@@ -1,16 +1,72 @@
+:root {
+  --theme-primary: #ffa398;
+  --theme-primary-light: #ffe1de;
+  --theme-secondary: #2B206F;
+}
+
+*::selection {
+  background-color: var(--theme-primary-light);
+  color: var(--theme-secondary);
+}
+
+body {
+  background-color: var(--theme-secondary);
+  color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+}
+main {
+  padding: 10vw;
+}
+
 button {
   border: 2px solid salmon;
   padding: 6px 12px;
-  background-color: #ffe1de;
+  background-color: var(--theme-primary-light);
   cursor: pointer;
   font-size: 12px;
   font-weight: 600;
   color: salmon;
-  font-family: 'Open Sans', Arial, sans-serif;
   letter-spacing: 0.025rem;
   transition: all 0.1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 button:hover, button:focus {
-  background-color: #ffa398;
+  background-color: var(--theme-primary);
   color: #ffffff;
+}
+p {
+  margin: 0;
+  color: #ffffff;
+}
+mark {
+  background-color: var(--theme-primary);
+}
+code {
+  background-color: var(--theme-primary-light);
+  color: var(--theme-secondary);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+a {
+  color: var(--theme-primary);
+}
+
+input,
+select {
+  background: transparent;
+  padding: 6px 8px;
+  border: 2px solid var(--theme-primary);
+  color: var(--theme-primary);
+  margin: 0 4px 0 0;
+}
+option {
+  background-color: var(--theme-secondary);
+}
+
+.card {
+  border-radius: 4px;
+  border: 2px solid var(--theme-primary);
+  padding: 8px;
+  margin: 0 0 16px;
 }
