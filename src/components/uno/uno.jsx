@@ -4,14 +4,19 @@ import { TEST_DB_KEYS } from '../../utils';
 import { Card } from '../card';
 
 export function Uno() {
-  const [optionValue, setOptionValue] = React.useState('uno');
   const localForage = React.useContext(localForageContext);
+  const [optionValue, setOptionValue] = React.useState('uno');
+  const [localInputValue, setLocalInputValue] = React.useState('');
 
-  function handleOptionChange(e) {
+  async function handleOptionChange(e) {
     setOptionValue(e.target.value);
+    // get existing localForage value (if one exists)
+    const existingValue = await localForage.getItem(e.target.value);
+    setLocalInputValue(existingValue);
   }
 
   function handleInputChange(e) {
+    setLocalInputValue(e.target.value);
     console.log(`${optionValue}: ${e.target.value}`);
     localForage.setItem(optionValue, e.target.value);
   }
@@ -25,7 +30,7 @@ export function Uno() {
             <option key={option}>{option}</option>
           ))}
         </select>
-        <input type="text" onChange={handleInputChange} />
+        <input type="text" value={localInputValue} onChange={handleInputChange} />
       </div>
     </Card>
   );

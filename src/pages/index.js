@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Keys, Listener, Uno, Values } from '../components';
+import { Clear, Keys, Listener, Uno, Values } from '../components';
 import '../style.css';
 
 // markup
@@ -22,6 +22,7 @@ const IndexPage = () => {
       <Uno />
       <Keys />
       <Values />
+      <Clear />
       <Listener />
     </main>
   );

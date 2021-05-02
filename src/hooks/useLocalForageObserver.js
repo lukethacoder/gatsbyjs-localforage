@@ -12,6 +12,8 @@ export function useLocalForageObserver(keyToObserve) {
         return new Observable(subscribeFn);
       };
 
+      console.log(`Using "${localForage.driver()}" as the localForage driver`);
+
       const observable = localForage.newObservable({
         key: keyToObserve,
       });
@@ -30,10 +32,6 @@ export function useLocalForageObserver(keyToObserve) {
       return subscription;
     });
   }, []);
-
-  React.useEffect(() => {
-    console.log(`change ugh `, keyValue);
-  }, [keyValue]);
 
   return keyValue;
 }
