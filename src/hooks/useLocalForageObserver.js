@@ -14,6 +14,11 @@ export function useLocalForageObserver(keyToObserve) {
 
       console.log(`Using "${localForage.driver()}" as the localForage driver`);
 
+      (async () => {
+        const initialValue = await localForage.getItem(keyToObserve);
+        setKeyValue(initialValue);
+      })();
+
       const observable = localForage.newObservable({
         key: keyToObserve,
       });

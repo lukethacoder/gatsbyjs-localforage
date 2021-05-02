@@ -8,17 +8,25 @@ export function Uno() {
   const [optionValue, setOptionValue] = React.useState('uno');
   const [localInputValue, setLocalInputValue] = React.useState('');
 
+  React.useEffect(() => {
+    getExistingValueByKey(optionValue);
+  }, []);
+
   async function handleOptionChange(e) {
     setOptionValue(e.target.value);
-    // get existing localForage value (if one exists)
-    const existingValue = await localForage.getItem(e.target.value);
-    setLocalInputValue(existingValue);
+    getExistingValueByKey(e.target.value);
   }
 
   function handleInputChange(e) {
     setLocalInputValue(e.target.value);
     console.log(`${optionValue}: ${e.target.value}`);
     localForage.setItem(optionValue, e.target.value);
+  }
+
+  async function getExistingValueByKey(key) {
+    // get existing localForage value (if one exists)
+    const existingValue = await localForage.getItem(key);
+    setLocalInputValue(existingValue ? existingValue : '');
   }
 
   return (
