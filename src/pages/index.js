@@ -1,22 +1,28 @@
 import * as React from 'react';
-import { Keys, Uno, Values } from '../components';
+import { Keys, Listener, Uno, Values } from '../components';
 import '../style.css';
 
 // markup
 const IndexPage = () => {
   return (
-    <main
-      style={{
-        color: '#232129',
-        padding: 96,
-        fontFamily: '-apple-system, Roboto, sans-serif, serif',
-      }}
-    >
+    <main>
       <title>GatsbyJS vs localForage</title>
-      <p>gatsbyjs vs localforage.</p>
-      <Keys />
+      <h1>gatsbyjs vs localforage.</h1>
+      <h2>
+        example usage of{' '}
+        <a href="https://localforage.github.io/localForage/" target="_blank">
+          localForage
+        </a>{' '}
+        within a{' '}
+        <a href="https://www.gatsbyjs.com/" target="_blank">
+          GatsbyJS
+        </a>{' '}
+        site (feat. observables)
+      </h2>
       <Uno />
+      <Keys />
       <Values />
+      <Listener />
     </main>
   );
 };

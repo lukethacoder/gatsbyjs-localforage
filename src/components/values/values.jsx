@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { localForageContext } from '../../context';
+import { Card } from '../card';
 
 export function Values() {
   const [keyValuePairs, setKeyValuePairs] = React.useState([]);
@@ -16,15 +17,17 @@ export function Values() {
   }
 
   return (
-    <div>
+    <Card>
       <button onClick={getLocalForageKeys}>getKeyValuePairs</button>
-      <ul>
-        {keyValuePairs.map((item) => (
-          <li key={item.key}>
-            {item.key}: {item.value}
-          </li>
-        ))}
-      </ul>
-    </div>
+      {keyValuePairs && keyValuePairs.length > 0 && (
+        <ul>
+          {keyValuePairs.map((item) => (
+            <li key={item.key}>
+              {item.key}: {item.value}
+            </li>
+          ))}
+        </ul>
+      )}
+    </Card>
   );
 }
