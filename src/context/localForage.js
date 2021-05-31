@@ -1,11 +1,20 @@
-import * as React from 'react';
-import localforage from 'localforage';
-import { extendPrototype } from 'localforage-observable';
+import { createContext } from 'react'
+import isBrowser from 'is-in-browser'
+import localforage from 'localforage'
+import { extendPrototype } from 'localforage-observable'
 
-localforage.config({
-  driver: [localforage.WEBSQL, localforage.INDEXEDDB, localforage.LOCALSTORAGE],
-  name: 'gatsbyjs-vs-localforage',
-});
+console.log('isBrowser ', isBrowser)
 
-const localForage = extendPrototype(localforage);
-export const localForageContext = React.createContext(localForage);
+if (isBrowser) {
+  localforage.config({
+    driver: [
+      localforage.WEBSQL,
+      localforage.INDEXEDDB,
+      localforage.LOCALSTORAGE,
+    ],
+    name: 'gatsbyjs-vs-localforage',
+  })
+}
+
+const localForage = extendPrototype(localforage)
+export const localForageContext = createContext(isBrowser && localForage)
