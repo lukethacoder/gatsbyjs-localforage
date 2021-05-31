@@ -7,6 +7,7 @@
   "keywords": [
     "gatsby"
   ],
+  "prettier": "@lsd-aus/prettier-config",
   "scripts": {
     "dev": "gatsby develop",
     "develop": "gatsby develop",
@@ -18,10 +19,14 @@
   "dependencies": {
     "gatsby": "^3.3.1",
     "gatsby-plugin-google-gtag": "^3.4.0",
+    "is-in-browser": "^2.0.0",
     "localforage": "^1.9.0",
     "localforage-observable": "^2.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "zen-observable": "^0.8.15"
+  },
+  "devDependencies": {
+    "@lsd-aus/prettier-config": "^1.0.2"
   }
 }
