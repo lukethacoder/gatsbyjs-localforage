@@ -1425,7 +1425,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@lsd-aus/prettier-config@^1.0.2":
+"@lsd-aus/prettier-config@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@lsd-aus/prettier-config/-/prettier-config-1.0.2.tgz#70797f38c524c536b55b030d83f236853a4a0e6e"
   integrity sha512-71qTMzUZ+/PcSliknaR3nFXFAgMc7X7yeK0bodXknukH7PU1q5y/H/YnimSCbBtDC73+VkJZWLGydFXjmXsEDg==
@@ -5218,7 +5218,7 @@ gatsby-page-utils@^1.4.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-google-gtag@^3.4.0:
+gatsby-plugin-google-gtag@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.4.0.tgz#87d149e778cfa23b9e0463de696f3c00cf002925"
   integrity sha512-pIzTY+mVzb/JcStLgvhzmr9kmdN8sz6LnTTXOFzvr8sTZ9WXnwWUqJqjZxaEeGYznJHItu4KP8VWg6RRpUDoBg==
@@ -5352,7 +5352,7 @@ gatsby-telemetry@^2.4.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby@^3.3.1:
+gatsby@3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-3.4.0.tgz#5bfb41b3bdbd7969aa21d316de7752b44abd3e3d"
   integrity sha512-gqfJn1gvcNgVfhn1L0EWgW3To2tHZM9hdoxUweZVOtA9HdXeOONEV5xob2aDOl+fl3CLUmvSPSsb9PnqQEikuw==
@@ -6517,7 +6517,7 @@ is-hexadecimal@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-hexadecimal/-/is-hexadecimal-1.0.4.tgz#cc35c97588da4bd49a8eedd6bc4082d44dcb23a7"
   integrity sha512-gyPJuv83bHMpocVYoqof5VDiZveEoGoFL8m3BXNb2VW8Xs+rz9kqO8LOQ5DH6EsuvilT1ApazU0pyl+ytbPtlw==
 
-is-in-browser@^2.0.0:
+is-in-browser@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-in-browser/-/is-in-browser-2.0.0.tgz#a2343a18d8f8a600e8a20cb3022183a251e30355"
   integrity sha512-/NUv5pqj+krUJalhGpj0lyy+x7vrD9jt1PlAfkoIDEXqE+xZgFJ4FU8e9m99WuHbCqsBZVf+nzvAjNso+SO80A==
@@ -7079,7 +7079,7 @@ loader-utils@^1.4.0:
     emojis-list "^3.0.0"
     json5 "^1.0.1"
 
-localforage-observable@^2.1.1:
+localforage-observable@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/localforage-observable/-/localforage-observable-2.1.1.tgz#a30c8a8aec72d59a1b138238f3c4b9356264fc99"
   integrity sha512-p4E9FtopJlOa2ENk9Pw5puVOaOJ7tnLCJ+54iJXlG76wrmDAifDdbIcQc6QNAHJNIGLr+YKg0O3PeA77dEgD/w==
@@ -7087,7 +7087,7 @@ localforage-observable@^2.1.1:
     localforage "^1.5.0"
     zen-observable "^0.2.1"
 
-localforage@^1.5.0, localforage@^1.9.0:
+localforage@1.9.0, localforage@^1.5.0:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.9.0.tgz#f3e4d32a8300b362b4634cc4e066d9d00d2f09d1"
   integrity sha512-rR1oyNrKulpe+VM9cYmcFn6tsHuokyVHFaCM3+osEmxaHTbEk8oQu6eGDfS6DQLWi/N67XRmB8ECG37OES368g==
@@ -9190,7 +9190,7 @@ react-dev-utils@^11.0.3:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
-react-dom@^17.0.1:
+react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -9219,7 +9219,7 @@ react-refresh@^0.9.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
   integrity sha512-Gvzk7OZpiqKSkxsQvO/mbTN1poglhmAV7gR/DdIrRrSMXraRQQlfikRJOr3Nb9GTMPC5kof948Zy6jJZIFtDvQ==
 
-react@^17.0.1:
+react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -11696,15 +11696,15 @@ yurnalist@^2.1.0:
     read "^1.0.7"
     strip-ansi "^5.2.0"
 
+zen-observable@0.8.15:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
+  integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
+
 zen-observable@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.2.1.tgz#c47676a64132b8475a61aa49e514755b5b9663f3"
   integrity sha1-xHZ2pkEyuEdaYapJ5RR1W1uWY/M=
-
-zen-observable@^0.8.15:
-  version "0.8.15"
-  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
-  integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
 
 zwitch@^1.0.0:
   version "1.0.5"
