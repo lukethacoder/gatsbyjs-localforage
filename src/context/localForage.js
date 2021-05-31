@@ -3,8 +3,6 @@ import isBrowser from 'is-in-browser'
 import localforage from 'localforage'
 import { extendPrototype } from 'localforage-observable'
 
-console.log('isBrowser ', isBrowser)
-
 if (isBrowser) {
   localforage.config({
     driver: [

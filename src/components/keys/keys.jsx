@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { localForageContext } from '../../context';
-import { Card } from '../card';
+import * as React from 'react'
+import { localForageContext } from '../../context'
+import { Card } from '../card'
 
 export function Keys() {
-  const [keys, setKeys] = React.useState([]);
-  const localForage = React.useContext(localForageContext);
+  const [keys, setKeys] = React.useState([])
+  const localForage = React.useContext(localForageContext)
 
   async function getLocalForageKeys() {
-    const _keys = await localForage.keys();
+    const _keys = await localForage.keys()
 
-    console.log(`_keys `, _keys);
-    setKeys(_keys);
+    console.log(`_keys `, _keys)
+    setKeys(_keys)
   }
 
   return (
@@ -24,5 +24,5 @@ export function Keys() {
         </ul>
       )}
     </Card>
-  );
+  )
 }

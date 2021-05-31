@@ -1,1 +1,1 @@
-export * from './uno';
+export * from './uno'

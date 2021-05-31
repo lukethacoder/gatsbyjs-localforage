@@ -1,1 +1,1 @@
-export * from './localForage';
+export * from './localForage'

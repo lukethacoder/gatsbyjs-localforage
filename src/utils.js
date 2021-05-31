@@ -1,1 +1,1 @@
-export const TEST_DB_KEYS = ['uno', 'dos', 'tres'];
+export const TEST_DB_KEYS = ['uno', 'dos', 'tres']

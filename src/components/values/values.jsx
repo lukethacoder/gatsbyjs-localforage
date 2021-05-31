@@ -1,19 +1,19 @@
-import * as React from 'react';
-import { localForageContext } from '../../context';
-import { Card } from '../card';
+import * as React from 'react'
+import { localForageContext } from '../../context'
+import { Card } from '../card'
 
 export function Values() {
-  const [keyValuePairs, setKeyValuePairs] = React.useState([]);
-  const localForage = React.useContext(localForageContext);
+  const [keyValuePairs, setKeyValuePairs] = React.useState([])
+  const localForage = React.useContext(localForageContext)
 
   async function getLocalForageKeys() {
     // const _keyValuePairs = await localForage.iterate((value, key, iterationNumber) => ({ key, value }));
-    const _keyValuePairs = [];
+    const _keyValuePairs = []
     await localForage.iterate(function(value, key, iterationNumber) {
-      _keyValuePairs.push({ key, value });
-    });
-    console.log(`_keyValuePairs `, _keyValuePairs);
-    setKeyValuePairs(_keyValuePairs);
+      _keyValuePairs.push({ key, value })
+    })
+    console.log(`_keyValuePairs `, _keyValuePairs)
+    setKeyValuePairs(_keyValuePairs)
   }
 
   return (
@@ -29,5 +29,5 @@ export function Values() {
         </ul>
       )}
     </Card>
-  );
+  )
 }
