@@ -17,8 +17,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "3.13.1",
-    "gatsby-plugin-google-gtag": "3.13.0",
+    "gatsby": "3.14.0",
+    "gatsby-plugin-google-gtag": "3.14.0",
     "is-in-browser": "2.0.0",
     "localforage": "1.10.0",
     "localforage-observable": "2.1.1",
